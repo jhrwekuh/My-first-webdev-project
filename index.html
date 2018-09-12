@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <title> 1 week webdev challenge</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    </body>
+
+    <head>
+        <div class="body-wrapper">
+            <div class="main-logo">
+                <a href="#"><img class="mainlogo" src="img/Masteralb.png" alt=Masteralb logo></a>
+            </div> 
+            
+            <!-- Desktop layout-->
+            <div class="flex-container">
+
+                 <div class="first-column">
+                    
+                    <!-- Register form-->
+                        <div class="registerbox">
+                            <h1 class="form-title">Register form</h1>
+                                <div class="form-wrapper-outline">
+                                    <div class="form-wrapper">
+                                        <form action="#">
+                                       
+                                            <div class="form-field form-username-register">
+                                                <input type="text" id="user_Name" placeholder="Username" required>
+                                                <i class="fas fa-user"></i>
+                                            </div>
+                                        
+                                            <div class="form-field form-password-register">
+                                                <input type="password" id="user_Password" placeholder="Password" required>
+                                                <i class="fas fa-key"></i>
+                                            </div>
+
+                                            <div class="form-field form-password-confirmation">
+                                                    <input type="password" id="user_Password_confirm" placeholder="Confirm Password" required>
+                                                    <i class="fas fa-key"></i>
+                                            </div>
+
+                                            <div class="form-field form-email-register">
+                                                    <input type="email" id="user_Email" placeholder="E-Mail" required>
+                                                    <i class="fas fa-envelope"></i>
+
+                                            </div>
+
+                                            <div class="form-field form-user-location">
+                                                    <select name="user_location" id="user_Location" required>
+                                                        <option value="">Select your location</option>
+                                                        <option value="">Poznan</option>
+                                                        <option value="">Warsaw</option>
+                                                        <option value="">Cracow</option>
+                                                        <option value="">Gdansk</option>
+                                                    </select>
+                                                    <i class="fas fa-map-marker-alt"></i>
+                                            </div>
+
+                                            <div class="user-checkbox">
+                                                <input type="checkbox" placeholder="I confirm" required>
+                                                <label for="user-checkbox">I have read and understand T&C conditions</label>
+
+                                               <!-- jak bedzie potrzebny to go wlacz do strony <div class="custom-checkbox-wrapper">
+                                                    <span class="custom-checkbox">
+                                                    </span> Po co to jest ten div???
+                                                </div> -->
+                                            </div>
+
+                                            <div class="form-button btn-large">
+                                                <input type="submit" value="Sign Up">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <!-- Send email form-->
+                                <div class="send-email-box">
+                                    <h1 class="form-title">Send E-Mail</h1>
+                                    <div class="form-wrapper-outline">
+                                        <div class="form-wrapper">
+                                            <form action="#">
+                                                <div class="form-field form-user-login">
+                                                    <input type="text" id="user_name_sendemail" placeholder="Your Name" required>
+                                                    <i class="fas fa-user"></i>
+                                                </div>
+
+                                                <div class="form-field form-user-email">
+                                                    <input type="text" id="user_emailto_email" placeholder="Your Email" required>
+                                                    <i class="fas fa-envelope"></i>
+                                                </div>
+                                                    <textarea name="user_emailto" id="email_textarea" placeholder="Type your message ..." required></textarea>
+                                                <div class="user-checkbox">
+                                                    <input type="checkbox" placeholder="I confirm">
+                                                    <label for="user-checkbox">Send a copy to my Email</label>
+                                                </div>
+                                                <div class="form-button btn-large">
+                                                    <input type="submit" value="Send Email">
+                                                </div>
+
+                                            </form>
+                                        </div>
+                                    </div>
+<                               </div>
+
+
+
+                        </div>
+
+                 </div>
+
+                 <div class="second-column">
+                    <div class="signin-form">
+                        <h1 class="form-title">Sign In Form</h1>
+                        <div class="form-wrapper-outline">
+                            <div class="form-wrapper">
+                                <form action="#">
+                                    <div class="form-field form-username-signin">
+                                        <input type="text" id="username-signin" placeholder="User Name" required>
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <div class="form-field form-password-signin">
+                                        <input type="password" id="password-signin" placeholder="Password" required>
+                                        <i class="fas fa-key"></i>
+                                    </div>
+                                    <div class="submit-signin field-wrapper flex-container">
+                                        <div class="user-checkbox signin-checkbox">
+                                        <input type="checkbox">
+                                        <label for="submit-signin">Remember Me</label>
+                                        </div>
+                                        <div class="form-button btn-small btn-signin">
+                                            <input type="submit" id="submit-signin" value="Sign In">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recover-form">
+                        <h1 class="form-title">Recover form</h1>
+                        <div class="form-wrapper-outline">
+                            <div class="form-wrapper">
+                                <form action="#">
+                                <div class="form-field form-email-recover">
+                                    <input type="email" id="email_recover" placeholder="Enter Your Email" required>
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="form-field form-tel-recover">
+                                    <input type="tel" id="tel_recover" placeholder="Enter Your Phone Number" required>
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="field-wrapper recover-buttons flex-container recovery-buttons">
+                                    <div class="form-button btn-small">
+                                        <input type="submit" id="send_recover" value="Send">
+                                    </div>
+                                    <div class="form-button btn-small">
+                                        <input type="reset" id="reset_recover" value="Reset">
+                                    </div>
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subscribe-form">
+                        <h1 class="form-title">Subscribe Form</h1>
+                        <div class="form-wrapper-outline">
+                            <div class="form-wrapper">
+                                <form action="#">
+                                    <div class="form-field form-email-subscribtion">
+                                        <input type="email" id="email_subscription" placeholder="Enter Your Email" required>
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="field-wrapper flex-container subscribtion-buttons">
+                                        <div class="form-button btn-small">
+                                            <input type="submit" id="apply_subscribtion" value="Subscribe">
+                                        </div>
+                                        <div class="form-button btn-small-reject">
+                                            <input type="reset" id="reject_subscription" value="No, thanks">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="small-logo">
+                        <img class="small_logo" src="img/smallLogo.png" alt="small logo">
+                    </div>
+
+                 </div>
+            </div>
+        </div>
+    </head>
+</html>
+
+
+<!-- SPRAWDZ JAK DZIALA FIELD-WRAPPER FLEX-CONTAINER POSTIION I TE KOMENDY NA ROWNANIE ALIGN-CONTENT I JUSTIFY i funkcja DISPLAY w CSS!!! ZAPISZ W NOTATKACH JAKO DOBRA LEKCJA DO POZYCJONOWANIA-->
